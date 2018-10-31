@@ -33,7 +33,7 @@ Exra features
 Manually testing 
 
 _The features can be tested by visiting the website link provided below_
-#### View the webstie [here](<https://simonawiti.github.io/gh-pages/UI/index.html>)
+#### View the webstie [here](<https://simonawiti.github.ioSentIT-app/gh-pages/UI/index.html>)
 
 ## Created by:
 # Simon Awiti
