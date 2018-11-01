@@ -12,27 +12,37 @@
     <!-- Navigation -->
     <nav>
         <ul>
-			<li><a href="login.html">Log In</a></li>
-			<li><a class='active' href="quotes.html">Quote</a></li>
+            <li><a href="adminlogin.html">Logout</a></li>
+            <li><a href="admincart.html">Client Orders</a></li>
+			<li><a href="addadmin.html">Register admin</a></li>
+			<li><a class='active' href="adminedit-parcel.html">Edit Order</a></li>
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
     <div class="page-info">
-        <h1>My quote</h1>
+        <h1>Edit a percel order</h1>
     </div>
     <div class="percel-display">
     <table>
         <tr>
-            <th>Percel size (kgs)</th>
-			<th>Sending charges(Ksh.)</th>
-			<th>Additional delivery charges(Ksh.)</th>
-			<th> Total Price (Ksh.)</th>
+            <th>Percel ID</th>
+            <th>Sender</th>
+            <th>Sender Location</th>
+            <th>Recepient</th>
+            <th>Destination</th>
+			<th>Present Location</th>
+			<th>Price (Ksh.)</th>
+			<th>Edit Parcel</th>
         </tr>
         <tr>
-            <td>4</td>
-			<td>1500</td>
-			<td>500</td>
+            <td>1</td>
+            <td>Sheila Monica</td>
+            <td>Nairobi</td>
+            <td>Kevin Kariuki</td>
+			<td>Nakuru</td>
+			<td>Naivasha</td>
 			<td>2000</td>
+            <td><input type="submit" class='submit' value="Edit Parcel"></td>
         </tr>
     </table>
     </div>
