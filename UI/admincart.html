@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/first.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>SentIT</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="adminlogin.html">Logout</a></li>
+            <li><a class='active' href="admincart.html">Clients Orders</a></li>
+			<li><a href="addadmin.html">Register admin</a></li>
+			<li><a href="adminedit-parcel.html">Edit</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <!-- Page info and search bar -->
+    <div class="page-info">
+        <h1>Select parcel order to edit</h1>
+        <p>
+            <form action="adminedit-parcel.html" class='search-flex'>
+                <div class='search-text'><input type="text" class='form-text' placeholder='Search for a particular percel here'name="search" id=""></div>
+                <div class='search-submit'><input type="submit" value='search' class='submit'></div>    
+                
+            </form>
+        </p>
+    </div>
+    <div class="percel-display">
+    <table>
+        <tr>
+            <th>Percel ID</th>
+            <th>Sender</th>
+            <th>Sender Location</th>
+            <th>Recepient</th>
+            <th>Destination</th>
+			<th>Present Location</th>
+			<th>Price (Ksh.)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sheila Monica</td>
+            <td>Nairobi</td>
+            <td>Kevin Kariuki</td>
+			<td>Nakuru</td>
+			<td>Naivasha</td>
+			<td>2000</td>
+        </tr>
+        <tr>
+		    <td>2</td>
+            <td>Kibet Kiplimo</td>
+            <td>Kisumu</td>
+            <td>Nelson Kariuki</td>
+			<td>Nakuru</td>
+			<td>Naivasha</td>
+			<td>4000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Joseph Kuria</td>
+            <td>Nairobi</td>
+            <td>Moses Kuria</td>
+			<td>Nanyuki</td>
+			<td>Makutano</td>
+			<td>1000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Hamilton Obado</td>
+            <td>Nairobi</td>
+            <td>Barrack Ochieng</td>
+			<td>Kisumu</td>
+			<td>Muhoroni</td>
+			<td>1500</td>
+        </tr>
+
+    </table>
+    </div>
+<div class="footer">
+ <footer>
+ <p>Proper management for proper accountability, copyright &copy;Andela2018</p> 
+</div>	
+</body>
+</html>
