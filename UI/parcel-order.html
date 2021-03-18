@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/first.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>SentIT</title>
+    <title>SSTS</title>
 </head>
 <body>
     <!-- Navigation -->
@@ -14,74 +14,47 @@
         <ul>
             <li><a href="login.html">Logout</a></li>
             <li><a href="cart.html">Cart</a></li>
-            <li><a class='active' href="parcel-order.html">Place new</a></li>
-			<li><a href="edit-parcel.html">Edit</a></li>
+            <li><a class='active' href="parcel-order.html">New ticket</a></li>
+			<li><a href="edit-parcel.html">Edit ticket</a></li>
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
-    <!-- Page info and search bar -->
-    <div class="page-info">
-        <h1>Add percels to be sent to the cart here</h1>
-        <p>
-            <form action="edit-parcel.html" class='search-flex'>
-                <div class='search-text'><input type="text" class='form-text' placeholder='Search for a particular percel here'name="search" id=""></div>
-                <div class='search-submit'><input type="submit" value='search' class='submit'></div>    
-                
-            </form>
-        </p>
-    </div>
-    <div class="percel-display">
-    <table>
-        <tr>
-            <th>Percel ID</th>
-            <th>Sender</th>
-            <th>My Location</th>
-            <th>Recepient</th>
-            <th>Destination</th>
-			<th>Price (Ksh.)</th>
-            <th>Add</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Joseph Kuria</td>
-            <td>Nairobi</td>
-            <td>Kevin Kariuki</td>
-			<td>Nakuru</td>
-			<td>2000</td>
-            <td><input type="submit" class='submit' value="Add"></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Joseph Kuria</td>
-            <td>Nairobi</td>
-            <td>Moses Kuria</td>
-			<td>Nanyuki</td>
-			<td>1000</td>
-            <td><input type="submit" class='submit' value="Add"></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Joseph Kuria</td>
-            <td>Nairobi</td>
-            <td>Kipyegon Jep</td>
-			<td>Eldoret</td>
-			<td>4000</td>
-            <td><input type="submit" class='submit'value="Add"></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Joseph Kuria</td>
-            <td>Nairobi</td>
-            <td>Barrack Ochieng</td>
-			<td>Kisumu</td>
-			<td>1000</td>
-            <td><input type="submit" class='submit' value="Add"></td>
-        </tr>
-    </table>
+    <div class="main-wrapper">
+        <div class="form-flex">
+            <h1>Creat your ticket here</h1>
+            <div class="form-content">
+				<table>
+					<tr><td>
+						<form action='quotes.html' input type="submit" class='submit'>
+                            <label for="cars">Select a ticket type</label>
+                            <select name="cars" id="cars">
+                              <optgroup label="Ticket type">
+                                <option value="Development">Development</option>
+                                <option value="Testing">Testing</option>
+                                <option value="Production">Production</option>
+                              </optgroup>
+                            </select></td><td>
+                            <label for="cars">Lebel the ticket priority</label>
+                            <select name="cars" id="cars">
+                              <optgroup label="Priority">
+                                <option value="Low">Low</option>
+                                <option value="Medium">Medium</option>
+                                <option value="High">High</option>
+                              </optgroup>
+                            </select></td><br>
+						</form>
+					</tr>
+				</table>
+                <br><textarea rows="4" cols="50" name="comment" form="usrform"> Brief description of the bug...</textarea>
+                <br>
+                <p><input class='submit' type="submit" value="Submit Ticket"></p>
+				</div>
+            </div>
+        </div>
     </div>
 <div class="footer">
  <footer>
- <p>Proper management for proper accountability, copyright &copy;Andela2018</p> 
+ <p>Your security begins with us, copyright &copy;SSTS2021</p> 
 </div>	
 </body>
 </html>
