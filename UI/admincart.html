@@ -13,9 +13,7 @@
     <nav>
         <ul>
             <li><a href="login.html">Logout</a></li>
-            <li><a href="cart.html">Cart</a></li>
             <li><a class='active' href="parcel-order.html">New ticket</a></li>
-			<li><a href="edit-parcel.html">Edit ticket</a></li>
             <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
@@ -29,43 +27,45 @@
                 <h1>assign ticket</h1>
 				<table>
 					<tr><td>
-						<form action='quotes.html' input type="submit" class='submit'>
+						<form action='adminedit-parcel.html' input type="submit" class='submit'>
                             <label for="cars">Select a ticket type</label>
-                            <select name="cars" id="cars">
-                              <optgroup label="Ticket type">
+                            <select name="cars" id="cars" required>
+                                <option value="">None</option>
                                 <option value="Development">Development</option>
                                 <option value="Testing">Testing</option>
                                 <option value="Production">Production</option>
-                              </optgroup>
-                            </select></td><td>
-                            <label for="cars">Lebel the ticket priority</label>
-                            <select name="cars" id="cars">
-                              <optgroup label="Priority">
-                                <option value="Low">Low</option>
-                                <option value="Medium">Medium</option>
-                                <option value="High">High</option>
-                              </optgroup>
                             </select></td><br>
-						</form>
 					</tr>
 				</table>
 				<table>
 					<tr><td>
-						<form action='quotes.html' input type="submit" class='submit'>
+						<form action='adminedit-parcel.html' input type="submit" class='submit'>
+                            <label for="cars">Lebel ticket priority</label>
+                            <select name="cars" id="cars" required>
+                                <option value="">None</option>
+                                <option value="Development">Low</option>
+                                <option value="Testing">Medium</option>
+                                <option value="Production">High</option>
+                            </select></td><br>
+					</tr>
+				</table>
+				<table>
+					<tr><td>
+						<form action='adminedit-parcel.html' input type="submit" class='submit'>
                             <label for="cars">Assign ticket to a team</label>
-                            <select name="cars" id="cars">
-                              <optgroup label="Ticket type">
+                            <select name="cars" id="cars" required>
+                                <option value="">None</option>
                                 <option value="Development">Team A</option>
                                 <option value="Testing">Team B</option>
                                 <option value="Production">Team C</option>
-                              </optgroup>
                             </select></td><br>
-						</form>
 					</tr>
 				</table>
-                <br><textarea rows="4" cols="50" name="comment" form="usrform"> Brief description of the bug...</textarea>
+                <br><textarea rows="4" cols="50" name="comment" form="usrform" required> Brief description of the bug...</textarea>
                 <br>
-                <p><input class='submit' type="submit" value="Submit Ticket"></p>
+                <form action='adminedit-parcel.html'>
+                    <p><input class='submit' type="submit" value="submit ticket"></p>
+                </form>
 				</div>
             </div>
         </div>
